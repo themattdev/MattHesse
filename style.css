@@ -10,6 +10,39 @@ html, body {
     height: 100%;
 }
 
+
+
+@media (max-width: 623px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 724px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 858px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+/* General Elements */
 body{
     background-color: #1e1e1e;
     -webkit-background-size: cover;
@@ -41,7 +74,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex: 1 0 auto;
-    font-size: 30px;
 }
 
 /* Dictonary */
@@ -59,6 +91,12 @@ a:hover{
     display: flex;
     margin-right: 5px;
     color: white;
+    flex-wrap: wrap
+}
+
+.valueWrap{
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .key{
@@ -81,6 +119,8 @@ a:hover{
 
 .value{
     color: #ce9178;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .comment{
