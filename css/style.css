@@ -53,6 +53,10 @@ body{
     flex-direction: column;
 }
 
+.bodyLight{
+    background-color: #ffffff;
+}
+
 p{
     color: white;
 }
@@ -66,6 +70,17 @@ a:hover{
     transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
+
+.light{
+    text-decoration: none;
+    color: #800000;
+}
+
+.light:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
 
 #mainWrapper {
     width : 100%;
@@ -84,6 +99,13 @@ a:hover{
     margin-right: 10px;
 }
 
+.lineLight{
+    color: black;
+    text-align: left;
+    display: flex;
+    margin-right: 10px;
+}
+
 .innerLine{
     
     margin-left: 60px;
@@ -91,6 +113,15 @@ a:hover{
     display: flex;
     margin-right: 5px;
     color: white;
+    flex-wrap: wrap
+}
+
+.innerLineLight{
+    margin-left: 60px;
+    text-align: left;
+    display: flex;
+    margin-right: 5px;
+    color: black;
     flex-wrap: wrap
 }
 
@@ -103,8 +134,16 @@ a:hover{
     color:#9cdcfe;
 }
 
+.keyLight{
+    color: #ff0000;
+}
+
 .number{
     color:#b5cea8;
+}
+
+.numberLight{
+    color:#208658;
 }
 
 .var{
@@ -112,8 +151,18 @@ a:hover{
     margin-right: 10px;
 }
 
+.varLight{
+    color: #0000ff;
+    margin-right: 10px;
+}
+
 .varName{
     color: #d7ba7d;
+    margin-right: 10px;
+}
+
+.varNameLight{
+    color: #800000;
     margin-right: 10px;
 }
 
@@ -123,12 +172,37 @@ a:hover{
     white-space: nowrap;
 }
 
+.valueLight{
+    color: #0451a5;
+    display: inline-block;
+    white-space: nowrap;
+}
+
 .comment{
     color: #6a9955;
 }
 
+.commentLight{
+    color: #008000;
+}
+
 .colon{
     margin-right: 10px;
+}
+
+/* Darkmode */
+#darkModeButton {
+    background-image: url("../images/button.png");
+    background-size: 50px 50px;
+    position:absolute;
+    top:25;
+    right:25;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+
+    
 }
 
 
