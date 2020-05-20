@@ -1,19 +1,6 @@
 var darkMode = true;
 
-function disableSelection(target){
-    if (typeof target.onselectstart!="undefined") // if IE
-        target.onselectstart=function(){return false}
-    else if (typeof target.style.MozUserSelect!="undefined") // if Firefox
-        target.style.MozUserSelect="none";
-    else // others
-        target.onmousedown=function(){return false;}
-
-    target.style.cursor = "default";
-}
-
 $(document).ready(function(){
-
-    disableSelection(document.getElementById("darkModeButton"));
 
     $("#darkModeButton").click(function(){
       
